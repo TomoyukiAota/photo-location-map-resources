@@ -3,7 +3,7 @@ This repo is to put resources for [photo-location-map repo](https://github.com/T
 
 ## Important Notice
 After updating the files in this repo, the jsDelivr CDN cache needs to be purged
-in order for users to get the updated file content.
+in order for the Photo Location Map application to get the updated file content.
 
 To do so,
 
