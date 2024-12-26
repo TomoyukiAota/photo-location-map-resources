@@ -1,18 +1,14 @@
 {
   // In case of breaking changes to the file format, add a new .jsonc file using a new version number.
-  // Then, the newer versions of the application can use the new .jsonc file,
-  // and the older versions of the application can continue to correctly work using the old .jsonc file.
+  // By doing so, the newer versions of the application can use the new .jsonc file,
+  // and the older versions of the application can continue to use the old .jsonc file.
   "version": "1",
   
-  // Configure the tile server in use by specifing Name defined in RasterTileProvidersDefinition below.
-  "rasterTileProvidersInUse": [
-    "StandardTileLayer"
-  ],
-  
   // Reference: https://wiki.openstreetmap.org/wiki/Raster_tile_providers
-  "rasterTileProvidersDefinition": [
+  "rasterTileProviders": [
     {
-      "name": "StandardTileLayer",
+      "uniqueName": "StandardTileLayer",
+      "displayName": "OpenStreetMap",
       "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
       "attribution": "© OpenStreetMap contributors"
     }
