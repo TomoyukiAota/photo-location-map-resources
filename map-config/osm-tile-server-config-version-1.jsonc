@@ -7,8 +7,7 @@
   // Reference: https://wiki.openstreetmap.org/wiki/Raster_tile_providers
   "rasterTileProviders": [
     {
-      "uniqueName": "StandardTileLayer",
-      "displayName": "OpenStreetMap",
+      "name": "OpenStreetMap",
       "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
       "attribution": "© OpenStreetMap contributors"
     }
