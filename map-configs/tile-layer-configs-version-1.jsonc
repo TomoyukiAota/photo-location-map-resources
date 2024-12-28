@@ -1,0 +1,29 @@
+{
+  // In case of breaking changes to the file format,
+  // in order to keep the backward compatibility,
+  // 1) keep the existing .jsonc file as is, and
+  // 2) add a new .jsonc file with the new format using a new version number.
+  //
+  // By doing so, the existing versions of the application can continue to use the existing .jsonc file, and
+  // the newer versions of the application can use the new .jsonc file with the new file format.
+  "version": "1",
+  
+  // Reference: https://wiki.openstreetmap.org/wiki/Raster_tile_providers
+  "tileLayerConfigs": [
+    {
+      "name": "OpenStreetMap",
+      "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "options": {
+        "attribution": "© OpenStreetMap contributors",
+        "maxZoom": 19
+      }
+    },
+    {
+      "name": "Esri World Imagery",
+      "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      "options": {
+        "attribution": "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
+      }
+    }
+  ]
+}
