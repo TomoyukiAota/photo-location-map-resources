@@ -11,7 +11,7 @@
   // References:
   // https://leaflet-extras.github.io/leaflet-providers/preview/
   // https://wiki.openstreetmap.org/wiki/Raster_tile_providers
-  "tileLayerConfigs": [
+  "rasterTileBaseLayerConfigs": [
     {
       "name": "OpenStreetMap",
       "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
