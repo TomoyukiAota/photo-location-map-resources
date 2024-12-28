@@ -8,7 +8,9 @@
   // the newer versions of the application can use the new .jsonc file with the new file format.
   "version": "1",
   
-  // Reference: https://wiki.openstreetmap.org/wiki/Raster_tile_providers
+  // References:
+  // https://leaflet-extras.github.io/leaflet-providers/preview/
+  // https://wiki.openstreetmap.org/wiki/Raster_tile_providers
   "tileLayerConfigs": [
     {
       "name": "OpenStreetMap",
@@ -16,6 +18,13 @@
       "options": {
         "attribution": "© OpenStreetMap contributors",
         "maxZoom": 19
+      }
+    },
+    {
+      "name": "Esri World Street Map",
+      "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+      "options": {
+        "attribution": "Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012"
       }
     },
     {
