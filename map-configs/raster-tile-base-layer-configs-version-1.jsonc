@@ -40,5 +40,16 @@
         "attribution": "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
       }
     }
-  ]
+  ],
+
+  // The base layers that the application has of its own, apart from rasterTileBaseLayerConfigs, which it does not show:
+  // neither in the map's list of layers nor on the map. This takes such a layer off without a release of the
+  // application, as when its service asks for that. A layer is named as the map's list of layers names it,
+  // "Esri World Imagery Wayback" or "OpenHistoricalMap", and keeps that name here even if the application renames it.
+  //
+  // - A change takes effect at the next launch of the application.
+  // - A user who chose a hidden layer sees the first layer of rasterTileBaseLayerConfigs instead, and the chosen one
+  //   again once it is no longer hidden.
+  // - Releases up to 1.13.0 do not read this field, and they have none of these layers.
+  "hiddenBuiltInBaseLayers": []
 }
